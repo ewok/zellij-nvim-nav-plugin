@@ -32,6 +32,22 @@ load_plugins {
     nvim-nav
 }
 ```
+
+### Configuration Options
+
+The plugin supports the following configuration option:
+
+- `match_commands`: Comma-separated list of commands to match (default: `vim,nvim`)
+
+Example with custom commands:
+
+```plain
+plugins {
+    nvim-nav location="file:/home/youruser/some_dir/zellij-nvim-nav-plugin.wasm" {
+        match_commands "vim,nvim,hx"
+    }
+}
+```
  
 ```plain
     shared_except "scroll" {
