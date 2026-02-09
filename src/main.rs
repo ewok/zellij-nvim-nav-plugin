@@ -18,7 +18,7 @@ impl Default for State {
     fn default() -> Self {
         Self {
             permissions_granted: false,
-            match_commands: vec!["vim".to_string(), "nvim".to_string()],
+            match_commands: vec!["vim".to_string(), "nvim".to_string(), "fzf".to_string()],
             action: None,
         }
     }
